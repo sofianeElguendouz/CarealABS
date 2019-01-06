@@ -1,0 +1,236 @@
+/*---------------------------------------------------------------------------------------------*/
+.thumbnailok {
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+}
+
+.captionok {
+    padding: 25px 15px;
+}
+.khr 
+{
+    position:relative;
+}
+.rond 
+{
+    width:200px;
+    height:200px;
+    border-radius:200px;
+    float:left;
+    margin-left:130px;
+    margin-top:55px;
+    text-align: center;
+}
+.rond p
+{
+    text-align: center;
+    color:#fff;
+    font-size:22px;
+}
+.rondBlanc
+{
+    width:220px;
+    height:220px;
+    background:rgb(247,247,247);
+    border-radius:220px;
+    position:absolute;
+    overflow: hidden;
+    
+}
+.fond 
+{
+    width:240px;
+    height: 240px;
+    position:absolute;
+    top:-240px;
+    
+}
+.fond img 
+{
+    width: 240px;
+    height: 240px;
+}
+.btnok {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.button1{
+    background-color: #4CAF50; /* Green */
+    border: 2px solid #4CAF50;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-top: 100%;
+}
+.button1:hover {
+    background-color: white;
+    color: black;
+}
+.black-opacity 
+{
+    background:black;
+    opacity:0;
+    position:absolute;
+    z-index:1;
+}
+/*-----------------------------------------------*/
+.form
+{
+    margin-top: 200px;
+    margin-left: 500px;
+    position: absolute;
+}
+.form1
+{
+    margin-left:400px; 
+    margin-top:500px;
+}
+.form input
+{
+    display:block;
+    margin-bottom: 20px;
+    border: 2px solid grey;
+    padding: 8px;
+    transition: all 1s ease;
+
+}
+.form input:focus
+{
+    background-color: #3CB371;
+    color:black;
+}
+
+.form input[type=submit]
+{
+
+}
+.form input[type=submit]:hover
+{
+background-color: white;
+color:#3CB371;
+padding-left: 5px;
+
+}
+#myProgress {
+  width: 50%;
+  background-color: #ddd;
+}
+#myBar {
+  width: 1%;
+  height: 10px;
+  background-color: #FF6F6F;
+}
+.erreur 
+{
+    position:absolute;
+    text-align :center;
+    font-size:23px;
+}
+.buttonexp {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.exp {
+    background-color: #008CBA; 
+    color: black; 
+    border: 2px solid #008CBA;
+}
+
+.exp:hover {
+    background-color: white;
+    color: white;
+}
+/*-------------------------------------------------------------------------------------*/
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 50%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.btnNotif{
+  padding:2;
+  margin:2;
+  width:70px;
+  overflow:visible;                 
+  text-align:center;    
+  white-space:nowrap;   
+  height:40px;
+  line-height:38px;
+}
+.btnNotif span{
+    font-size: 1.5em;
+}

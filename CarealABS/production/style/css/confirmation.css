@@ -1,0 +1,43 @@
+body 
+{
+	position:relative;
+}
+.body
+{
+	z-index:1;
+	position:absolute;
+}
+.black-opacity 
+{
+	background:black;
+	opacity:0.6;
+	position:absolute;
+	z-index:2;
+}
+.confirmation 
+{
+	position:absolute;
+	z-index:3;
+	background:#fff;
+	color:rgb(118,118,118);
+	padding:15px;
+	text-align:center;
+}
+.form-container
+{
+	position:absolute;
+	top:250px;
+	left:640px;
+	width:350px;
+	height:2000px;
+	overflow:hidden;
+}
+
+.form-container div
+{
+	position:relative;
+}
+.ajouter
+{
+	position:relative;
+}

@@ -1,0 +1,68 @@
+body {
+  	height: 100%;
+	overflow: hidden;
+	margin:0;
+	padding:0;
+}
+.erreur 
+{
+	position:absolute;
+	text-align :center;
+	opacity:1;
+	top:-100px;
+	height: 50px;
+	color:#1abc9c;
+}
+h2 {
+	color: white;
+	text-align: center;
+}
+
+a{
+	color: blue;
+}
+
+#loginbox{
+	margin-top:50px;
+	position:absolute;
+	z-index: 2;
+	left:-0px;
+    padding:0;
+}
+
+#boutton{
+	background-color: rgb(222, 49, 99);
+  	color: white;
+}
+
+.panel-body{
+	padding-top: 20px;
+}
+
+.panel{
+	background-color: rgba(90, 94, 107, 0.5);
+}
+
+.Center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.help-block{
+	text-align: right;
+	font-weight: normal;
+}
+.back 
+{
+	background:#fff;
+    overflow:hidden;
+    position:absolute;
+    z-index:1;
+    top:-1000px;
+}
+.fond 
+{
+    position:absolute;
+	z-index: 3;
+}
