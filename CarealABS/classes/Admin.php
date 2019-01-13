@@ -8,8 +8,6 @@ protected $bdd;
 public function __construct() 
 {
 	$this->bdd = new PDO('mysql:dbname=project;localhost=localhost','root','');
-
-
 }
 
 

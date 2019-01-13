@@ -65,6 +65,7 @@
 				}
 			}
 			return $checkDay;
+			
 		}
 
 		/** La fonction qui renvoie le nombre des heures du travail de tous le déppartement pendant une journée donnée */
