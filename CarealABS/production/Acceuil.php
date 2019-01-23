@@ -97,7 +97,6 @@
             {
                 array_push($dataPoints,array("y" =>$absMonth[0][$i],"label"=>$absMonth[1][$i]));
             }
-
         return $dataPoints;
     }
     /*----------------------------------------------*/
@@ -145,7 +144,6 @@
         $gettinginput = $gettinginputs->fetch();
     $d = new SousDirecteurs($gettinginput['ID'], $gettinginput['Matricule'], $gettinginput['Login'], $gettinginput['Password']);
         $d->initiate();
-
       $dataPoints=array();
       $results = $bdd->query("SELECT * FROM department");
       $result=$results->fetchAll();
@@ -172,7 +170,6 @@
             {
                 array_push($dataPoints,array("label"=>$absMonth[1][$i],"y" =>$absMonth[0][$i]) );
             }
-
         return $dataPoints;
     }
   function tableHistoMoisTauxDepart($dd,$mois)
