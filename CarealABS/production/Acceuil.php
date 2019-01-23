@@ -215,6 +215,7 @@
         return $dataPoints;
     }
     /*----------------------------------------------*/
+    /*Le total des heures d'absences dans tous les services des départements*/
     function HeuresAbsTousServDepart($dd,$mois){
       $bdd = new PDO('mysql:host=localhost; dbname=project; charset=utf8', 'root','');
         $gettinginputs = $bdd->prepare("SELECT * FROM salary WHERE Matricule = :mat");
@@ -255,6 +256,7 @@
 
         return $dataPoints;
     }
+
     function tableHistoMoisTauxAbsServ($serv,$mois)
     {
         $datab = new PDO('mysql:host=localhost; dbname=project; charset=utf8', 'root','');
@@ -275,6 +277,7 @@
 
         return $dataPoints;
     }
+
     function tableHeuresAbsServ($serv,$mois)
     {
         $datab = new PDO('mysql:host=localhost; dbname=project; charset=utf8', 'root','');
@@ -307,6 +310,7 @@
             }
         return $dataPoints;
     }
+
     function tableHeuresAbsEmp($mat,$mois)
     {
         $emp=new Employe(0,0,' ',' ');
@@ -322,7 +326,6 @@
     /*----------------------------------------------------------------------------------------------------------*/
     function notifTauxAbsEcole($mois)
     {
-      
       $datab = new PDO('mysql:host=localhost; dbname=project; charset=utf8', 'root','');
         $gettinginputs = $datab->prepare("SELECT * FROM salary WHERE Matricule = :mat");
         $gettinginputs->execute(array('mat' => 1000000));
@@ -336,6 +339,7 @@
         $monthRate1=$ec->monthRateMajor($mois);
         return $monthRate1-$monthRate0;
     }
+
     function depPlus($mois){
         $datab = new PDO('mysql:host=localhost; dbname=project; charset=utf8', 'root','');
         $gettinginputs = $datab->prepare("SELECT * FROM salary WHERE Matricule = :mat");
@@ -353,6 +357,7 @@
         }
         return $d;
     }
+
     function servPlus($mois){
         $datab = new PDO('mysql:host=localhost; dbname=project; charset=utf8', 'root','');
         $gettinginputs = $datab->prepare("SELECT * FROM salary WHERE Matricule = :mat");
@@ -407,10 +412,8 @@
         return $d;
     }
     /*----------------------------------------------------------------------------------------------------------*/
-
     function notifTauxAbsServ($mois,$d)
     {
-      
       $datab = new PDO('mysql:host=localhost; dbname=project; charset=utf8', 'root','');
         $gettinginputs = $datab->prepare("SELECT * FROM salary WHERE Matricule = :mat");
         $gettinginputs->execute(array('mat' => 1000000));
@@ -425,7 +428,6 @@
         return $monthRate1-$monthRate0;
     }
     /*----------------------------------------------------------------------------------------------------------*/
-
     function EmpPlus($mois,$d){
         $datab = new PDO('mysql:host=localhost; dbname=project; charset=utf8', 'root','');
         $gettinginputs = $datab->prepare("SELECT * FROM salary WHERE Matricule = :mat");
